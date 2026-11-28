@@ -18,6 +18,11 @@ function dropHash() { if (location.hash) { history.replaceState(null, '', locati
 dropHash();
 window.addEventListener('hashchange', dropHash);
 </script>
+<!-- Vercel Web Analytics: counts visitors and page views in the Vercel dashboard. -->
+<script>
+window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Jost:ital,wght@0,400;0,500;0,600;1,400&family=Merienda:wght@400;700&display=swap">
 <style>
 /* Layout: the dusk band from the existing Google Sites header opens and closes the page.
